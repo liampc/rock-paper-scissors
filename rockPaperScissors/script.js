@@ -39,10 +39,13 @@ function playRound(playerSelection, computerSelection){
     else if (player == comp) {
         return ("Samesies! Try Again");
     }
+    else {
+        return ("Rock, Paper, Scissors only!");
+    }
 }
 
 
-const playerSelection = "rock";
+const playerSelection = prompt("Rock, Paper or Scissors?");
 const computerSelection = computerPlay();
 console.log(playRound(playerSelection, computerSelection));
 
