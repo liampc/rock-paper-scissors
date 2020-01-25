@@ -19,17 +19,20 @@ function computerPlay(){
 function playRound(playerSelection, computerSelection){
     let player = playerSelection.toLowerCase();
     let comp = computerSelection.toLowerCase();
+    let r = "rock";
+    let p = "paper";
+    let s = "scissors";
 
     if 
-       ((player == "rock" && comp =="paper") ||
-       (player == "paper" && comp =="scissors") ||
-       (player == "scissors" && comp == "rock")) {
+       ((player == r && comp == p) ||
+       (player == p && comp == s) ||
+       (player == s && comp == r)) {
          return("You Lose! " + comp + " beats " + player);
        }  
     else if 
-       ((player == "rock" && comp =="scissors") ||
-       (player == "paper" && comp =="rock") ||
-       (player == "scissors" && comp == "paper")) 
+       ((player == r && comp == s) ||
+       (player == p && comp == r) ||
+       (player == s && comp == p )) 
        {
          return("You Win! " + player + " beats " + comp);
        }  
