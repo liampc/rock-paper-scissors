@@ -14,19 +14,32 @@ function computerPlay(){
     }
 }
 
-function playRound(playerSelection, computerSelection) {
-    let comp = computerSelection;
 
- if (comp == "Paper" || "paper" || "PAPER") { 
-     return ("You Lose! Paper beats Rock");
- } else if (comp == "Scissors" || "scissors" || "SCISSORS") {
-     return ("You Win! Rock beats Scissors");
- }else if (comp == "Rock" || "rock" || "ROCK") {
-     return ("Samesies! Try Again");
- }
+
+function playRound(playerSelection, computerSelection){
+    let player = playerSelection.toLowerCase();
+    let comp = computerSelection.toLowerCase();
+
+    if 
+       ((player == "rock" && comp =="paper") ||
+       (player == "paper" && comp =="scissors") ||
+       (player == "scissors" && comp == "rock")) {
+         return("You Lose! " + comp + " beats " + player);
+       }  
+    else if 
+       ((player == "rock" && comp =="scissors") ||
+       (player == "paper" && comp =="rock") ||
+       (player == "scissors" && comp == "paper")) 
+       {
+         return("You Win! " + player + " beats " + comp);
+       }  
+    else if (player == comp) {
+        return ("Samesies! Try Again");
+    }
 }
 
-const playerSelection = "rock" 
+
+const playerSelection = "rock";
 const computerSelection = computerPlay();
-console.log(playRound(playerSelection, computerSelection))
+console.log(playRound(playerSelection, computerSelection));
 
