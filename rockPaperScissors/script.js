@@ -35,7 +35,7 @@ function playRound(playerSelection, computerSelection){
         (player == p && comp == r) ||
         (player == s && comp == p)
         ) { 
-            return ("You win! " + player + " beats " + comp);
+            alert("You win! " + player + " beats " + comp);
 
             }
     else if (
@@ -43,21 +43,20 @@ function playRound(playerSelection, computerSelection){
         (player == p && comp == s) ||
         (player == s && comp == r)
         ) {
-            return ("You lose! " + comp + " beats " + player);
+            alert ("You lose! " + comp + " beats " + player);
         }
     else if (player == comp) {
-        result = "It's a tie!";
-            return result;
+        alert("It's a tie!");
     }
     else {
-        return ("Rock, Paper, Scissors only!")
+        alert("Rock, Paper, Scissors only!");
     }
     
 }
 
 
 function game(n) {
-    n = prompt("How many games");
+    n = prompt("How many rounds do you want to play?");
     for (let i = 0; i < n; i++){
         console.log(playRound());
     }
