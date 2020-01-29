@@ -29,29 +29,22 @@ function playRound(playerSelection, computerSelection){
     let p = "paper";
     let s = "scissors";
     
-    
-    if (
-        (player == r && comp == s) ||
+    if ((player == r && comp == s) ||
         (player == p && comp == r) ||
-        (player == s && comp == p)
-        ) { 
-            alert("You win! " + player + " beats " + comp);
-
-            }
-    else if (
-        (player == r && comp == p) ||
-        (player == p && comp == s) ||
-        (player == s && comp == r)
-        ) {
-            alert ("You lose! " + comp + " beats " + player);
-        }
+        (player == s && comp == p)) { 
+        alert("You win! " + player + " beats " + comp);
+    }
+    else if ((player == r && comp == p) ||
+            (player == p && comp == s) ||
+            (player == s && comp == r)) {
+        alert("You lose! " + comp + " beats " + player);
+    }
     else if (player == comp) {
         alert("It's a tie!");
     }
     else {
         alert("Rock, Paper, Scissors only!");
-    }
-    
+    }  
 }
 
 
