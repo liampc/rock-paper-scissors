@@ -15,8 +15,8 @@ function computerPlay(){
 }
 
 function playerPlay() {
-    let player = prompt("Choose Rock, Paper or Scissors");
-    return (player.toLowerCase());
+    let player = document.querySelectorAll("#option>.choices");
+    console.log (player.toLowerCase());
 }
 
 
