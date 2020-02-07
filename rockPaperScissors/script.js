@@ -58,11 +58,15 @@ function playRound(playerSelection, computerSelection){
 
 function game(n) {
      n = parseInt(document.getElementById("rounds").value);
-    for (let i = 0; i < n; i++){
+     for (let i = 0; i < n; i++){
         console.log(playRound());
     }
 }
 
 
+
+
 let playBtn = document.getElementById("play");
-playBtn.addEventListener('click', game);
+playBtn.addEventListener('click', game)
+
+
