@@ -57,12 +57,12 @@ function playRound(playerSelection, computerSelection){
 
 
 function game(n) {
-    n = prompt("How many games");
+     n = parseInt(document.getElementById("rounds").value);
     for (let i = 0; i < n; i++){
         console.log(playRound());
     }
 }
 
 
-console.log(game());
-
+let playBtn = document.getElementById("play");
+playBtn.addEventListener('click', game);
