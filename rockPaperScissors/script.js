@@ -15,8 +15,8 @@ function computerPlay(){
 }
 
 function playerPlay() {
-    let player = prompt("Choose Rock, Paper or Scissors");
-    return (player.toLowerCase());
+    let player = document.querySelectorAll("#option>.choices");
+    console.log (player.toLowerCase());
 }
 
 
@@ -49,12 +49,21 @@ function playRound(playerSelection, computerSelection){
 
 
 function game(n) {
+<<<<<<< HEAD
     n = prompt("How many rounds do you want to play?");
     for (let i = 0; i < n; i++){
+=======
+     n = parseInt(document.getElementById("rounds").value);
+     for (let i = 0; i < n; i++){
+>>>>>>> style
         console.log(playRound());
     }
 }
 
 
-console.log(game());
+
+
+let playBtn = document.getElementById("play");
+playBtn.addEventListener('click', game)
+
 

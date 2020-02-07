@@ -1,11 +1,36 @@
 <!DOCTYPE html> 
 <html>
-    <head></head>
+    <head>
+        <link rel="stylesheet" href="script.js">
+    </head>
     <body>
-
+        <div>
+            <h1> ROCK, PAPER AND SCISSORS</h1>
+        </div>
+        <div>
+            <h2>How many rounds would you like to play?</h2>
+            <input type="text" id="rounds">
+            <button id="play">Play!</button>
+        </div>
+           
+        <div>
+            <p> Game <span> ROUND </span> of <span> TOTAL </span></p>
+        </div>
+        <br>
+        <div id="options">
+            <p>Choose your weapon!</p>
+            <button id="rock" class="choices">Rock</button>
+            <button id="paper" class="choices">Paper</button>
+            <button id="scissors" class="choices">Scissors</button>
+        </div>
+        <div>
+            <p>YOU LOSE / WIN!</p>
+            <p> playerChoice Beats ComputerChoice vice versa</p>
+        </div>
+        
 
 
         
-        <script src="script.js"> </script>
+       <script src="script.js"> </script>
     </body>
 </html>
