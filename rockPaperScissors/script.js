@@ -49,13 +49,8 @@ function playRound(playerSelection, computerSelection){
 
 
 function game(n) {
-<<<<<<< HEAD
-    n = prompt("How many rounds do you want to play?");
-    for (let i = 0; i < n; i++){
-=======
      n = parseInt(document.getElementById("rounds").value);
      for (let i = 0; i < n; i++){
->>>>>>> style
         console.log(playRound());
     }
 }
