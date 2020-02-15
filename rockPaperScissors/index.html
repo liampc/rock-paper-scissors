@@ -1,7 +1,7 @@
 <!DOCTYPE html> 
 <html>
     <head>
-        <link rel="stylesheet" href="script.js">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div>
@@ -10,11 +10,12 @@
         <div>
             <h2>How many rounds would you like to play?</h2>
             <input type="text" id="rounds">
-            <button id="btnPlay">Play!</button>
+            <button id="btnRound">Play!</button>
         </div>
            
         <div id="roundsDisplay">
-            <p> Game <span id="spanRound"> ROUND </span> of <span id="spanTotal"> TOTAL </span></p>
+            <p id="gameStatus"></p>
+            <p id="gameScore"></p>
         </div>
         <br>
         <div id="options">
@@ -31,6 +32,6 @@
 
 
         
-       <script src="script.js"> </script>
+       <script src="script2.js"> </script>
     </body>
 </html>
