@@ -13,7 +13,24 @@ function showScore(compScore, playerScore){
     document.getElementById("gameScore").innerHTML = output;
 }
 
+function playerPlay(){
+    let choices = document.querySelectorAll("#options>button"); 
+        switch (choices) {
+            case "#rock" :
+                alert("rock") 
+                break;
+            case "#paper" :
+                alert("paper")
+                break;
+            case "#scissors" :
+                alert("scissors")
+                break; 
+        }
+   
+}
 
-let roundBtn = document.getElementById("btnRound");
+let roundBtn = document.getElementById("btnPlay");
 roundBtn.addEventListener("click", showRounds);
 roundBtn.addEventListener("click", showScore);
+roundBtn.addEventListener("click", playerPlay);
+
