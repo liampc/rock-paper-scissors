@@ -1,17 +1,23 @@
+
+
 function computerPlay(){
     let random = (Math.floor(Math.random() * 3));
     let choices = ["rock", "paper", "scissors"];
-    let computer = choices[random];
+    let computer =  choices[random];
     return computer;
 }
 
 function playerPlay() {
-    choose = prompt("Choose your weapon");
-    playerChoice = toLowerCase(choose);
-    return playerChoice;
+    let btns = document.querySelectorAll("#options>button");
+    btns.forEach((button) => {
+        addEventListener('click', (e) =>{
+            let output = (button.id);
+            return output;
+        })
+    }
+    )
     }
   
-
 
 function playRound(playerSelection, computerSelection){
     playerSelection = playerPlay;
@@ -25,18 +31,18 @@ function playRound(playerSelection, computerSelection){
     if ((player == r && comp == s) ||
         (player == p && comp == r) ||
         (player == s && comp == p)) { 
-            console.log ("You win! " + player + " beats " + comp);
+            alert ("You win! " + player + " beats " + comp);
     }
     else if ((player == r && comp == p) ||
             (player == p && comp == s) ||
             (player == s && comp == r)) {
-            console.log ("You lose! " + comp + " beats " + player);
+           alert ("You lose! " + comp + " beats " + player);
     }
     else if (player == comp) {
-            console.log ("It's a tie!");
+           alert ("It's a tie!");
     }
     else {
-            console.log ("Rock, Paper, Scissors only!");
+            alert ("Rock, Paper, Scissors only!");
     }  
 }
 
@@ -44,15 +50,13 @@ function playRound(playerSelection, computerSelection){
 function game(n) {
      n = parseInt(document.getElementById("rounds").value);
      for (let i = 0; i < n; i++){
-        console.log(computerPlay())
-        console.log(playerPlay())
-        console.log(playRound());
+        console.log(playerPlay());
     }
 }
 
 
 
 
-let playBtn = document.getElementById("play");
+let playBtn = document.getElementById("btnRound");
 playBtn.addEventListener('click', game)
 
