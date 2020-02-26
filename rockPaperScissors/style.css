@@ -1,0 +1,16 @@
+:root{
+    --yellow: #fff591;
+    --green: #a3f7bf;
+    --blue: #05dfd7;
+    --pink:#f35588;
+}
+
+body{
+    background-color: var(--yellow);
+}
+
+h1{
+    text-align: center;
+    font-family: 'Fascinate Inline', 'OpenSans';
+    
+}
