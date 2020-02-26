@@ -17,7 +17,6 @@ btns.forEach((button) => {
 }
 );
 
-    
   
 function playRound(playerSelection, computerSelection){
     let player = playerSelection;
@@ -26,29 +25,28 @@ function playRound(playerSelection, computerSelection){
     let p = "paper";
     let s = "scissors";
     let output;
-    let score = "";
+    
     
     if ((player == r && comp == s) ||
         (player == p && comp == r) ||
         (player == s && comp == p)) { 
              output = ("You win! " + player + " beats " + comp);
-             score += "a";
+             
     }
     else if ((player == r && comp == p) ||
             (player == p && comp == s) ||
             (player == s && comp == r)) {
             output = ("You lose! " + comp + " beats " + player);
-            score += "b";
+            
     }
     else if (player == comp) {
             output =  ("It's a tie!");
-            score += "c";
+            
     }
     else {
              output =  ("Rock, Paper, Scissors only!");
-             score += "c";
+             
     }  
     document.getElementById("result").innerHTML = output; 
-    console.log(showScore(score))
+    
 }
-
