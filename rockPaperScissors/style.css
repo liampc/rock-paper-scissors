@@ -24,8 +24,14 @@ h1 {
    justify-content: center;
 }
 
+#options img{
+    width: 30vw;
+    height: 45vh;
+}
+
 #options img:hover{
     transform: scale(1.1, 1.1);
+    
 }
 
 p, #result {
