@@ -9,8 +9,8 @@ function computerPlay(){
 let imgs = document.querySelectorAll("#options>img");
 imgs.forEach((img) => {
     addEventListener('click', event =>{
-        if (event.target.nodeName == "IMG"){
-        let output = (img.id);
+        if (event.target.nodeName == "IMG") {
+        let output = (event.target.id);
         console.log(playRound(output, computerPlay()))
         } 
     })
@@ -48,5 +48,5 @@ function playRound(playerSelection, computerSelection){
              
     }  
     document.getElementById("result").innerHTML = output; 
-    
+    return player;
 }
