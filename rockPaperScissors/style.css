@@ -7,10 +7,12 @@
 
 body{
     background-color: var(--yellow);
+
 }
 
-h1{
+h1, #options p{
     text-align: center;
-    font-family: 'Fascinate Inline', 'OpenSans';
+    font-family: 'Titillium Web', 'OpenSans';
+    color: var(--pink);
     
 }
