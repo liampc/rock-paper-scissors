@@ -6,11 +6,11 @@ function computerPlay(){
     return computer;
 }
 
-let btns = document.querySelectorAll("#options>button");
-btns.forEach((button) => {
+let imgs = document.querySelectorAll("#options>img");
+imgs.forEach((img) => {
     addEventListener('click', event =>{
-        if (event.target.nodeName == "BUTTON"){
-        let output = (button.id);
+        if (event.target.nodeName == "IMG"){
+        let output = (img.id);
         console.log(playRound(output, computerPlay()))
         } 
     })
