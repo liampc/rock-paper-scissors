@@ -43,7 +43,6 @@ function playRound(playerSelection, computerSelection){
             output =  ("It's a tie!");
             
     }
-   
     document.getElementById("result").innerHTML = output; 
     return player;
 }
