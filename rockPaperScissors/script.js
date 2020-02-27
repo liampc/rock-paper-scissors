@@ -43,10 +43,7 @@ function playRound(playerSelection, computerSelection){
             output =  ("It's a tie!");
             
     }
-    else {
-             output =  ("Rock, Paper, Scissors only!");
-             
-    }  
+   
     document.getElementById("result").innerHTML = output; 
     return player;
 }
