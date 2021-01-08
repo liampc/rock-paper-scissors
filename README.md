@@ -1,5 +1,11 @@
-Title: Rock Paper Scissors Project 
+# Rock Paper Scissors Project 
 
-Topic: Web dev 101
+## Project: The Odin Project - Web dev 101
 
-A Project under the The Odin Project Curriculum 
+### Objectives: 
+1. Practice factory functions
+2. Practice module pattern
+
+### Preview
+
+https://liampc.github.io/rock-paper-scissors/
